@@ -115,7 +115,7 @@ export default function Hero() {
         className="mt-8"
       >
         <a
-          href="#projects"
+          href="/projects"
           className="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition"
         >
           View My Work
