@@ -48,9 +48,9 @@ export default function AboutPage() {
         
         <section className="flex flex-col items-center text-center">
           <img
-            src="/your-photo.jpg" // Replace with actual path
+            src="/me.jpg" // Replace with actual path
             alt="Han's Profile"
-            className="w-32 h-32 rounded-full object-cover mb-4 shadow-md border-2 border-blue-400"
+            className="w-64 h-64 rounded-full object-cover mb-4 shadow-md border-2 border-blue-400"
           />
           <h1 className="text-3xl md:text-4xl font-bold">
             <Typewriter
