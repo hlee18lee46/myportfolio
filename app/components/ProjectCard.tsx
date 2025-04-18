@@ -1,5 +1,7 @@
 'use client';
 
+import React from 'react';
+
 import { FaGithub, FaYoutube } from 'react-icons/fa';
 import {
   SiNextdotjs,
@@ -18,7 +20,7 @@ type ProjectCardProps = {
   tech: string[];
 };
 
-const techIcons: Record<string, JSX.Element> = {
+const techIcons: Record<string, React.ReactNode> = {
   python: <SiPython />,
   fastapi: <SiFastapi />,
   nextjs: <SiNextdotjs />,

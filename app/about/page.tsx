@@ -16,51 +16,32 @@ export default function AboutPage() {
   init={async (engine) => await loadSlim(engine)}
   options={{
     background: { color: 'transparent' },
-    fullScreen: { enable: false },
     fpsLimit: 60,
-    particles: {
-      number: { value: 60 },
-      color: { value: ['#a78bfa', '#38bdf8', '#f472b6'] }, // pastel purple, blue, pink
-      shape: { type: 'circle' },
-      size: {
-        value: { min: 4, max: 8 },
-        animation: {
-          enable: true,
-          speed: 4,
-          minimumValue: 2,
-        },
-      },
-      move: {
-        enable: true,
-        speed: 1.2,
-        direction: 'top',
-        outModes: { default: 'out' },
-      },
-      opacity: {
-        value: 0.4,
-        animation: {
-          enable: true,
-          speed: 0.5,
-          minimumValue: 0.1,
-        },
-      },
-    },
     interactivity: {
       events: {
-        onHover: { enable: true, mode: 'bubble' },
+        onHover: { enable: true, mode: 'repulse' },
       },
       modes: {
-        bubble: {
-          distance: 100,
-          size: 10,
-          duration: 2,
-          opacity: 0.5,
-        },
+        repulse: { distance: 100, duration: 0.4 },
       },
+    },
+    particles: {
+      color: { value: '#38bdf8' },
+      links: {
+        enable: true,
+        color: '#38bdf8',
+        distance: 120,
+        opacity: 0.4,
+      },
+      move: { enable: true, speed: 1.2 },
+      number: { value: 45 },
+      opacity: { value: 0.5 },
+      size: { value: { min: 1, max: 3 } },
     },
   }}
   className="absolute inset-0 z-[-1]"
 />
+
 
       <main className="pt-28 px-6 max-w-4xl mx-auto space-y-12">
         {/* Profile + Typewriter */}
