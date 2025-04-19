@@ -9,137 +9,144 @@ import { loadSlim } from 'tsparticles-slim';
 
 const allProjects = [
   {
-    title: 'AI Chatbot',
-    description: 'A GPT-powered assistant built with FastAPI and Next.js.',
-    github: 'https://github.com/yourname/chatbot',
-    youtube: 'https://youtube.com/demo',
-    tech: ['Python', 'FastAPI', 'NextJS'],
+    title: 'EmptyTheFridge',
+    description: 'EmptyTheFridge gives an user interface to users to upload a photo of his/her fridge then it gives suggested potential recipes for dishes that users desire.',
+    github: 'https://github.com/garrett-huggins/empty-the-fridge',
+    youtube: 'https://youtu.be/Vhb7lYLsOw0',
+    devpost: 'https://devpost.com/software/emptythefridge',
+    tech: ['Python', 'FastAPI'],
+    categories: [ 'Web'],
+  },
+  {
+    title: 'Mailrush',
+    description: 'Deliver the mails to the houses while battling through adversaries',
+    youtube: 'https://youtu.be/6TjTUENaJvo',
+    tech: ['C#', 'Unity'],
+    categories: [ 'Game'],
+  },
+  {
+    title: 'Reveal The Thief',
+    description: 'An arduino hardware that uses photoresistor and open the camera to capture the face of the thief',
+    github: 'https://github.com/hlee18lee46/robhack',
+    youtube: 'https://www.youtube.com/watch?v=ju7bwRtXp-U',
+    devpost: 'https://www.sprint.dev/projects/28eb2a2f-18e9-4fcb-a7f5-f15af700cb97',
+    tech: ['Arduino', 'Python'],
+    categories: ['Embedded'],
+  },
+  {
+    title: 'Latinnect',
+    description: 'Latinnect is a digital marketplace that connects Latine vendors with customers, allowing vendors to easily list and manage their products, and customers to browse, filter, and purchase goods.',
+    github: 'https://github.com/hlee18lee46/shellhacks',
+    devpost: 'https://devpost.com/software/latinconnect',
+    tech: ['Python', 'Flask', 'Scikit-learn', 'Swift', 'Supabase'],
+    categories: ['Mobile'],
+  },
+  {
+    title: 'Puppify',
+    description: 'An iOS SwiftUI mobile app, Scan a puppy for their adult height weight and lifespan and more.',
+    github: 'https://github.com/yourname/mobile-portfolio',
+    youtube: 'https://youtu.be/BhUDBBtHvSo',
+    devpost: 'https://devpost.com/software/puppify',
+    tech: ['Python', 'Flask', 'Scikit-learn', 'Swift', 'MongoDB'],
+    categories: ['Mobile'],
+  },
+  {
+    title: '1Finance.ai',
+    description: 'OneStop Finance app for your literacy, your financial.',
+    github: 'https://github.com/hlee18lee46/hacknc',
+    youtube: 'https://youtu.be/QUoXfuycNIs',
+    devpost: 'https://devpost.com/software/1finance-ai',
+    tech: ['Python', 'Flask', 'Scikit-learn', 'Swift', 'terraform', 'MongoDB'],
+    categories: ['Mobile', 'Machine Learning'],
+  },
+  {
+    title: 'CommunitySOS',
+    description: 'CommunitySOS is an opt-in social action platform that empowers local communities to quickly mobilize volunteers during urgent situations that fall outside traditional emergency response. ',
+    github: 'https://github.com/kynhix/HackPSU2024-Community-SOS',
+    devpost: 'https://devpost.com/software/communitysos',
+    tech: ['React', 'Tailwind', 'NextJS', 'Supabase'],
+    categories: ['Web'],
+  },
+  {
+    title: 'Puzzle Vault',
+    description: 'Gamifying financial analysis for employees of a public-facing company.',
+    github: 'https://github.com/hlee18lee46/ugabackend',
+    youtube: 'https://youtu.be/slgCbs9MWLY',
+    devpost: 'https://devpost.com/software/truist-cape',
+    tech: ['React', 'Vite', 'Python', 'Flask', 'MongoDB'],
+    categories: ['Web'],
+  },
+  {
+    title: 'Quantumly-Safe',
+    description: 'Quantumly Safe provides a security measure to their websites, built upon Quantum Random Forest models based on user activities',
+    github: 'https://github.com/Ashan-264/Q-Safe',
+    devpost: 'https://devpost.com/software/q-safe',
+    tech: ['Python', 'Flask', 'Scikit-learn', 'streamlit'],
     categories: ['Web', 'Machine Learning'],
   },
   {
-    title: 'Smart Car',
-    description: 'Embedded Arduino system with ML-based obstacle detection.',
-    github: 'https://github.com/yourname/smartcar',
-    youtube: 'https://youtube.com/demo',
-    tech: ['Python', 'FastAPI', 'Embedded'],
-    categories: ['Embedded', 'Machine Learning'],
+    title: 'DigitalMedics',
+    description: 'DigitalMedics is a fall-detection, button-derived emergency alert system that alerts 911 authorities and personal contacts through SMS text messages.',
+    github: 'https://github.com/hlee18lee46/georgehacks',
+    youtube: 'https://youtu.be/aRwjC-qYDpQ',
+    devpost: 'https://devpost.com/software/digitalmedics',
+    tech: ['Python', 'Flask', 'Arduino'],
+    categories: ['Embedded'],
   },
   {
-    title: 'Mobile Portfolio',
-    description: 'An iOS SwiftUI mobile app showcasing my work.',
-    github: 'https://github.com/yourname/mobile-portfolio',
-    youtube: 'https://youtube.com/demo',
-    tech: ['React', 'Tailwind'],
-    categories: ['Mobile', 'Web'],
+    title: 'EcoHabit',
+    description: 'EcoHabit is a Web Application where users can self-report their eco-habits and interact with conversational AI or view dashboard charts to gain insights.',
+    github: 'https://github.com/nahom23ET/Eco-Habit',
+    youtube: 'https://youtu.be/4vBtmpYSQmk',
+    devpost: 'https://devpost.com/software/ecopulse-pu7lma',
+    tech: ['React', 'Tailwind', 'NextJS', 'Python', 'FastAPI', 'MongoDB'],
+    categories: ['Web'],
   },
   {
-    title: 'Mobile Portfolio',
-    description: 'An iOS SwiftUI mobile app showcasing my work.',
-    github: 'https://github.com/yourname/mobile-portfolio',
-    youtube: 'https://youtube.com/demo',
-    tech: ['React', 'Tailwind'],
-    categories: ['Mobile', 'Web'],
+    title: 'Prof-AI-cademy',
+    description: 'Web Application ',
+    github: 'https://github.com/hlee18lee46/profaicademyfront',
+    youtube: 'https://youtu.be/dwuCwktj1Z8',
+    devpost: 'https://devpost.com/software/ecopulse-pu7lma',
+    tech: ['React', 'Tailwind', 'NextJS', 'Python', 'FastAPI', 'MongoDB'],
+    categories: ['Web'],
   },
   {
-    title: 'Mobile Portfolio',
-    description: 'An iOS SwiftUI mobile app showcasing my work.',
-    github: 'https://github.com/yourname/mobile-portfolio',
-    youtube: 'https://youtube.com/demo',
-    tech: ['React', 'Tailwind'],
-    categories: ['Mobile', 'Web'],
+    title: 'Sync-a-Life',
+    description: 'Web Application AI-powered productivity companion.',
+    github: 'https://github.com/hlee18lee46/wildfront',
+    youtube: 'https://www.youtube.com/watch?v=kpADTbpnCD0',
+    devpost: 'https://devpost.com/software/ecopulse-pu7lma',
+    tech: ['React', 'Tailwind', 'NextJS', 'Python', 'FastAPI', 'MongoDB'],
+    categories: ['Web'],
   },
   {
-    title: 'Mobile Portfolio',
-    description: 'An iOS SwiftUI mobile app showcasing my work.',
+    title: 'TravelJournal',
+    description: 'Web Application where you can plan your trips with Gemini-powered plan generator.',
     github: 'https://github.com/yourname/mobile-portfolio',
-    youtube: 'https://youtube.com/demo',
-    tech: ['React', 'Tailwind'],
-    categories: ['Mobile', 'Web'],
+    youtube: 'https://youtu.be/J9a7D-R_SDM',
+    devpost: 'https://devpost.com/software/ecopulse-pu7lma',
+    tech: ['React', 'Tailwind', 'NextJS', 'NodeJS', 'Python', 'FastAPI'],
+    categories: ['Web'],
   },
   {
-    title: 'Mobile Portfolio',
-    description: 'An iOS SwiftUI mobile app showcasing my work.',
+    title: 'MindFree.AI',
+    description: 'Web Application for therapy, meditation, progress report with AI that interacts with the real-time emotion data, saved through blockchain.',
     github: 'https://github.com/yourname/mobile-portfolio',
-    youtube: 'https://youtube.com/demo',
-    tech: ['React', 'Tailwind'],
-    categories: ['Mobile', 'Web'],
-  },
-  {
-    title: 'Mobile Portfolio',
-    description: 'An iOS SwiftUI mobile app showcasing my work.',
-    github: 'https://github.com/yourname/mobile-portfolio',
-    youtube: 'https://youtube.com/demo',
-    tech: ['React', 'Tailwind'],
-    categories: ['Mobile', 'Web'],
-  },
-  {
-    title: 'Mobile Portfolio',
-    description: 'An iOS SwiftUI mobile app showcasing my work.',
-    github: 'https://github.com/yourname/mobile-portfolio',
-    youtube: 'https://youtube.com/demo',
-    tech: ['React', 'Tailwind'],
-    categories: ['Mobile', 'Web'],
-  },
-  {
-    title: 'Mobile Portfolio',
-    description: 'An iOS SwiftUI mobile app showcasing my work.',
-    github: 'https://github.com/yourname/mobile-portfolio',
-    youtube: 'https://youtube.com/demo',
-    tech: ['React', 'Tailwind'],
-    categories: ['Mobile', 'Web'],
-  },
-  {
-    title: 'Mobile Portfolio',
-    description: 'An iOS SwiftUI mobile app showcasing my work.',
-    github: 'https://github.com/yourname/mobile-portfolio',
-    youtube: 'https://youtube.com/demo',
-    tech: ['React', 'Tailwind'],
-    categories: ['Mobile', 'Web'],
-  },
-  {
-    title: 'Mobile Portfolio',
-    description: 'An iOS SwiftUI mobile app showcasing my work.',
-    github: 'https://github.com/yourname/mobile-portfolio',
-    youtube: 'https://youtube.com/demo',
-    tech: ['React', 'Tailwind'],
-    categories: ['Mobile', 'Web'],
-  },
-  {
-    title: 'Mobile Portfolio',
-    description: 'An iOS SwiftUI mobile app showcasing my work.',
-    github: 'https://github.com/yourname/mobile-portfolio',
-    youtube: 'https://youtube.com/demo',
-    tech: ['React', 'Tailwind'],
-    categories: ['Mobile', 'Web'],
-  },
-  {
-    title: 'Mobile Portfolio',
-    description: 'An iOS SwiftUI mobile app showcasing my work.',
-    github: 'https://github.com/yourname/mobile-portfolio',
-    youtube: 'https://youtube.com/demo',
-    tech: ['React', 'Tailwind'],
-    categories: ['Mobile', 'Web'],
-  },
-  {
-    title: 'Mobile Portfolio',
-    description: 'An iOS SwiftUI mobile app showcasing my work.',
-    github: 'https://github.com/yourname/mobile-portfolio',
-    youtube: 'https://youtube.com/demo',
-    tech: ['React', 'Tailwind'],
-    categories: ['Mobile', 'Web'],
-  },
-  {
-    title: 'Mobile Portfolio',
-    description: 'An iOS SwiftUI mobile app showcasing my work.',
-    github: 'https://github.com/yourname/mobile-portfolio',
-    youtube: 'https://youtube.com/demo',
-    tech: ['React', 'Tailwind'],
-    categories: ['Mobile', 'Web'],
+    youtube: 'https://youtu.be/GaXNc6Ug1PI',
+    devpost: 'https://devpost.com/software/ecopulse-pu7lma',
+    tech: ['React', 'Tailwind', 'NextJS', 'NodeJS', 'Python', 'FastAPI'],
+    categories: ['Web'],
   },
 ];
-
-const techFilters = ['Python', 'FastAPI', 'NextJS', 'React', 'MongoDB', 'Tailwind'];
-const categoryFilters = ['Web', 'Mobile', 'Game', 'Machine Learning', 'Embedded'];
+const techFilterGroups = {
+    '🖥️ Front-end Stack': ['React', 'NextJS', 'Vite', 'Tailwind'],
+    '🧠 Back-end Stack': ['Python', 'FastAPI', 'Flask', 'NodeJS'],
+    '🗃️ Database': ['MongoDB', 'Supabase'],
+  };
+  
+  const categoryFilters = ['Web', 'Mobile', 'Game', 'Machine Learning', 'Embedded'];
+  
 
 export default function ProjectsPage() {
   const [selectedTech, setSelectedTech] = useState<string[]>([]);
@@ -194,33 +201,46 @@ export default function ProjectsPage() {
         <h1 className="text-3xl font-bold mb-6 text-center">My Projects</h1>
         <div className="flex flex-col md:flex-row gap-6">
           {/* Filters */}
-          <aside className="w-full md:w-1/8 space-y-6 pr-4">
-  <div className="bg-white dark:bg-gray-900 p-4 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
-    <h2 className="font-semibold text-lg mb-4 text-center text-gray-800 dark:text-white">
-      🔧 Tech Stack
-    </h2>
-    <div className="space-y-2">
-      {techFilters.map((tech) => (
-        <label key={tech} className="flex items-center space-x-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-800 px-2 py-1 rounded-md transition">
-          <input
-            type="checkbox"
-            className="accent-blue-500"
-            checked={selectedTech.includes(tech)}
-            onChange={() => toggle(tech, selectedTech, setSelectedTech)}
-          />
-          <span>{tech}</span>
-        </label>
-      ))}
+          <aside className="w-full md:w-1/5 space-y-6 pr-4">
+  {/* Tech Filters by Group */}
+  {Object.entries(techFilterGroups).map(([group, techs]) => (
+    <div
+      key={group}
+      className="bg-white dark:bg-gray-900 p-4 rounded-lg shadow-md border border-gray-200 dark:border-gray-700"
+    >
+      <h2 className="font-semibold text-lg mb-4 text-center text-gray-800 dark:text-white">
+        {group}
+      </h2>
+      <div className="space-y-2">
+        {techs.map((tech) => (
+          <label
+            key={tech}
+            className="flex items-center space-x-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-800 px-2 py-1 rounded-md transition"
+          >
+            <input
+              type="checkbox"
+              className="accent-blue-500"
+              checked={selectedTech.includes(tech)}
+              onChange={() => toggle(tech, selectedTech, setSelectedTech)}
+            />
+            <span>{tech}</span>
+          </label>
+        ))}
+      </div>
     </div>
-  </div>
+  ))}
 
+  {/* Category Filter */}
   <div className="bg-white dark:bg-gray-900 p-4 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
     <h2 className="font-semibold text-lg mb-4 text-center text-gray-800 dark:text-white">
       🎯 Category
     </h2>
     <div className="space-y-2">
       {categoryFilters.map((cat) => (
-        <label key={cat} className="flex items-center space-x-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-800 px-2 py-1 rounded-md transition">
+        <label
+          key={cat}
+          className="flex items-center space-x-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-800 px-2 py-1 rounded-md transition"
+        >
           <input
             type="checkbox"
             className="accent-blue-500"

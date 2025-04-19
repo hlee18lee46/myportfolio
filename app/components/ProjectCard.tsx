@@ -1,39 +1,63 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 import { FaGithub, FaYoutube } from 'react-icons/fa';
 import {
-  SiNextdotjs,
-  SiFastapi,
-  SiPython,
-  SiReact,
-  SiMongodb,
-  SiTailwindcss,
-} from 'react-icons/si';
+    SiPython,
+    SiFastapi,
+    SiNextdotjs,
+    SiReact,
+    SiMongodb,
+    SiTailwindcss,
+    SiFlask,
+    SiArduino,
+    SiUnity,
+    SiSwift,
+    SiScikitlearn,
+    SiStreamlit,
+    SiSupabase,
+    SiTerraform,
+    SiNodedotjs,
+    SiVite,
+  } from 'react-icons/si';
 
 type ProjectCardProps = {
   title: string;
   description: string;
-  github: string;
-  youtube: string;
+  github?: string;
+  youtube?: string;
+  devpost?: string; // ✅ optional
   tech: string[];
 };
 
+
 const techIcons: Record<string, React.ReactNode> = {
-  python: <SiPython />,
-  fastapi: <SiFastapi />,
-  nextjs: <SiNextdotjs />,
-  react: <SiReact />,
-  mongodb: <SiMongodb />,
-  tailwind: <SiTailwindcss />,
-};
+    python: <SiPython />,
+    fastapi: <SiFastapi />,
+    nextjs: <SiNextdotjs />,
+    react: <SiReact />,
+    mongodb: <SiMongodb />,
+    tailwind: <SiTailwindcss />,
+    flask: <SiFlask />,
+    arduino: <SiArduino />,
+    unity: <SiUnity />,
+    swift: <SiSwift />,
+    scikitlearn: <SiScikitlearn />,
+    streamlit: <SiStreamlit />,
+    supabase: <SiSupabase />,
+    terraform: <SiTerraform />,
+    nodejs: <SiNodedotjs />,
+    vite: <SiVite />,
+  };
 
 export default function ProjectCard({
   title,
   description,
   github,
   youtube,
+  devpost,
   tech = [],
 }: ProjectCardProps) {
   return (
@@ -50,11 +74,28 @@ export default function ProjectCard({
         <a href={github} target="_blank" className="text-gray-700 dark:text-gray-300 flex items-center gap-1 text-sm">
           <FaGithub /> GitHub
         </a>
+
+        <a
+            href={devpost}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 dark:text-blue-300 text-sm flex items-center gap-1"
+          >
+            <Image
+              src="/dev.jpg"
+              alt="Devpost"
+              width={16}
+              height={16}
+              className="rounded-sm"
+            />
+            Devpost
+          </a>
+
       </div>
 
       <div className="flex flex-wrap justify-end gap-2 mt-auto">
         {tech.map((item) => {
-          const key = item.toLowerCase().replace('.', '');
+            const key = item.toLowerCase().replace('.', '').replace('-', '');
           return (
             <span
               key={item}
