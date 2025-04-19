@@ -34,6 +34,15 @@ const allProjects = [
     categories: ['Embedded'],
   },
   {
+    title: 'Portfolio by double-agent',
+    description: 'my portfolio website chatbot that uses hand-crafted rule-based agent as well as tool calling agent powered by Gemini LLM. This was to combat the rising costs of paid LLM',
+    github: 'https://github.com/hlee18lee46/myagent_backend',
+    youtube: 'https://youtu.be/3pDwNMu5IOs',
+    devpost: 'https://devpost.com/software/myportfolio-ai',
+    tech: ['Svelte', 'Python', 'MongoDB'],
+    categories: ['Web'],
+  },
+  {
     title: 'Latinnect',
     description: 'Latinnect is a digital marketplace that connects Latine vendors with customers, allowing vendors to easily list and manage their products, and customers to browse, filter, and purchase goods.',
     github: 'https://github.com/hlee18lee46/shellhacks',
